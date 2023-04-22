@@ -12,6 +12,7 @@
 ``` sh
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
 sudo hostnamectl set-hostname tomcat
+sudo su - ec2-user
 cd /opt 
 sudo yum install git wget -y
 sudo yum install java-1.8.0-openjdk-devel -y
@@ -36,4 +37,4 @@ sh /opt/tomcat9/bin/startup.sh
 sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
 sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
 starttomcat
-sudo su - ec2-user
+

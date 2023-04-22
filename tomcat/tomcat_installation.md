@@ -13,7 +13,6 @@
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
 sudo hostnamectl set-hostname tomcat
 sudo su - ec2-user
-cd /opt 
 sudo yum install git wget -y
 sudo yum install java-1.8.0-openjdk-devel -y
 # install wget unzip packages.
@@ -22,6 +21,7 @@ sudo yum install wget unzip -y
 ## Install Tomcat version 9.0.69
 ### Download and extract the tomcat server
 ``` sh
+cd /opt 
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.74/bin/apache-tomcat-9.0.74.tar.gz
 sudo tar -xvf apache-tomcat-9.0.74.tar.gz
 sudo rm -rf apache-tomcat-9.0.74.tar.gz

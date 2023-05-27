@@ -13,3 +13,19 @@
 * Verify Terraform installation
   1. Open Gitbash
   2. Type `terraform version`
+
+## INSTALL ON UBUNTU 22.04
+* Create a working directory
+`sudo mkdir -p /opt/terraform`
+`cd /opt/terraform`
+*Download Terraform from HasiCorp website
+`sudo wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_386.zip`
+*Install unzip utility
+`sudo apt-get install unzip -y`
+*Unzip Terraform Zip file
+`sudo unzip terraform_1.4.6_linux_386.zip`
+*Add terraform to PATH
+`sudo mv /opt/terraform/terraform /usr/bin/`
+*Verify Terraform version
+`terraform -version`
+

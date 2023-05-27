@@ -1,6 +1,6 @@
 ## INSTALL ON WINDOWS
 * Go to https://www.terraform.io/downloads.html
-* Download windows 64-bit zip - https://releases.hashicorp.com/terraform/1.0.11/terraform_1.0.11_windows_amd64.zip
+* Download windows 64-bit zip - https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_windows_amd64.zip
 * Once downloaded, extract the zip file to downloads directory
 * Rename the extracted folder to terraform
 * Add to PATH Environment variables 
@@ -19,7 +19,7 @@
    `sudo mkdir -p /opt/terraform`
    `cd /opt/terraform`
 * Download Terraform from HasiCorp website
-  `sudo wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_386.zip`
+  `sudo wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_amd64.zip`
 * Install unzip utility
   `sudo apt-get install unzip -y`
 * Unzip Terraform Zip file
@@ -28,4 +28,10 @@
  `sudo mv /opt/terraform/terraform /usr/bin/`
 * Verify Terraform version
  `terraform -version`
+ 
+ ## INSTALL ON RHEL/CENTOS
+* sudo yum install -y yum-utils
+* sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+* sudo yum -y install terraform
+* terraform version
 

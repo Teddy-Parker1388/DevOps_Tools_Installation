@@ -16,16 +16,16 @@
 
 ## INSTALL ON UBUNTU 22.04
 * Create a working directory
-`sudo mkdir -p /opt/terraform`
-`cd /opt/terraform`
-*Download Terraform from HasiCorp website
-`sudo wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_386.zip`
-*Install unzip utility
-`sudo apt-get install unzip -y`
-*Unzip Terraform Zip file
-`sudo unzip terraform_1.4.6_linux_386.zip`
-*Add terraform to PATH
-`sudo mv /opt/terraform/terraform /usr/bin/`
-*Verify Terraform version
-`terraform -version`
+   1.sudo mkdir -p /opt/terraform
+   2.cd /opt/terraform`
+* Download Terraform from HasiCorp website
+ 1. sudo wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_386.zip
+* Install unzip utility
+ 1. sudo apt-get install unzip -y
+* Unzip Terraform Zip file
+ 1. sudo unzip terraform_1.4.6_linux_386.zip
+* Add terraform to PATH
+ 1. sudo mv /opt/terraform/terraform /usr/bin/`
+* Verify Terraform version
+ `terraform -version`
 

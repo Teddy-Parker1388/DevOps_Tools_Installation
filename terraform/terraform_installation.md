@@ -14,7 +14,7 @@
   1. Open Gitbash
   2. Type `terraform version`
 
-## INSTALL ON UBUNTU 22.04
+## INSTALL ON UBUNTU 
 * Create a working directory
    `sudo mkdir -p /opt/terraform`
    `cd /opt/terraform`
